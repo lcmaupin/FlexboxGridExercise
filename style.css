@@ -1,0 +1,130 @@
+section:not(#three) {
+    height: 400px;
+    margin: 10px 0;
+  }
+  #one {
+    background-color: rgb(150, 150, 150);
+  }
+  #two {
+    background-color: rgb(205, 205, 205);
+  }
+  #three {
+    background-color: rgb(150, 150, 150);
+    width: 400px;
+    margin-bottom: 200px;
+  }
+  div {
+    width: 90px;
+    height: 90px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #two div {
+    width: 400px;
+  }
+  #red {
+    background-color: red;
+  }
+  #green {
+    background-color: green;
+  }
+  #blue {
+    background-color: blue;
+  }
+  #orange {
+    background-color: orange;
+  }
+  #purple {
+    background-color: purple;
+  }
+  #brown {
+    background-color: brown;
+  }
+  p {
+    margin: 0;
+    background-color: #0C2340;
+    border: 2px solid #AE9142;
+    font-size: 30px;
+    color: #C99700;
+    text-align: center;
+  }
+  p:nth-of-type(even) {
+    color: #00843D;
+  }
+  
+  /* START BELOW THIS LINE */
+
+  #one {
+      display: flex;
+      justify-content: flex-end;
+      /* flex-direction: column; */
+      align-items: center;
+      flex-direction: column-reverse;
+  }
+
+  #two {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      /* align-content: center; */
+  }
+
+  #three {
+     display: grid;
+     /* grid-template-columns: 25% 25% 25% 25%; */
+     grid-auto-rows: 100px;
+     grid-template-areas: 'one one two two' 'three four four five' 'three four four five' 'six six six five' 'seven eight eight eight';
+  }
+
+  #orange {
+      order: 2;
+      align-self: center;
+  }
+
+  #purple {
+      order: 3;
+      align-self: flex-end;
+  }
+
+  #brown {
+      order: 1;
+      align-self: flex-start;
+  }
+
+  #p-one {
+      grid-area: one;
+  }
+
+  #p-two {
+      grid-area: two;
+  }
+
+  #p-three {
+      grid-area: three;
+  }
+
+  #p-four {
+      grid-area: four;
+  }
+
+  #p-five {
+      grid-area: five;
+  }
+
+  #p-six {
+      grid-area: six;
+  }
+
+  #p-seven {
+      grid-area: seven;
+  }
+
+  #p-eight {
+      grid-area: eight;
+  }
